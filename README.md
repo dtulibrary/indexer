@@ -1,4 +1,4 @@
-# piratar-index
+# indexer
 
 Simple indexer with a search / filter 
 
