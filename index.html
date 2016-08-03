@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Píratar</title>
+    <title>Indexer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
@@ -14,30 +14,23 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2>Kerfi Pírata</h2>
-          <p>Listi yfir hin ýmsu kerfi Pírata sem eru í rekstri og/eða þróun, og ábyrgðarmenn þess, <i>skáletraðir</i>.</p>
+          <h2>Indexer</h2>
         </div>
       </div>  <!-- end row -->
 
       <div class="row">
         <div class="col-md-6 col-xs-8">
-          <input type="search" class="form-control" ng-model="q" placeholder="Leita / sía" />
+          <input type="search" class="form-control" ng-model="q" placeholder="Filter" />
         </div>
       </div> <!-- end row -->
 
       <div class="row">
         <div class="col-md-12">
+          <p> The format is the following: URL - Description - Person responsible</p>
           <ul>
             <li ng-repeat="item in websites| filter:q "><a href="{{item.url}}">
                 {{ item.url}}</a> - {{ item.name }} - <i>{{ item.person }}</i>
             </li>
-          </ul>
-        </div>
-        <div class="col-md-12">
-          <h4>Annað</h4>
-          <ul>
-            <li><a href="https://github.com/piratar">Kóðageymsla - Github</a></li>
-            <li><a href="https://github.com/piratar/piratar.github.io">Kóðinn fyrir þessa síðu</a> - endilega sendið inn PR ef eitthvað vantar eða þarf að laga!</li>
           </ul>
         </div>
       </div> <!-- end row -->

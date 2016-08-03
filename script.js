@@ -3,47 +3,35 @@ var myApp = angular.module('myApp', []);
 myApp.controller('mainController', function($scope){
 
   $scope.websites = [
-    { 
-      url: "https://x.piratar.is",
-      name: "Kosningakerfi",
-      person: "Björn Levy"
-    },
-    {
-      url: "http://mas.piratar.is",
-      name: "Málefnaspjall (discource.piratar.is)"
-    },
-    {
-      url: "http://stefna.piratar.is",
-      name: "Stefna Pírata"
-    },
-    {
-      url: "https://member.piratar.is",
-      name: "Félagatal Pírata"
-    },
-    { 
-      url: "http://gogn.piratar.is",
-      name: "Mæting þingmanna á nefndarfundi"
-    },
-    { 
-      url: "http://www.piratar.is/althingisrynirinn/",
-      name: "Alþingisrýnir (2013)"
-    },
-    { 
-      url: "https://www.ventill.is/",
-      name: "Öryggisventill"
-    },
-    {
-      url: "http://kvika.piratar.is/",
-      name: "Kvika - Wiki vefur, inniheldur að mestu vinnuskjöl"
-    },
-    { 
-      url: "https://postur.piratar.is/",
-      name: "Póstkerfi Pírata",
-      person: "Björn Þór"
-    },
-    {
-      url: "http://blog.piratar.is/",
-      name: "Blogsíður Pírata"
-    }
+  {
+    url: "http://unstable.docker.cvt.dk:80",
+    name: "Grafana ",
+    person: "Viktor"
+  },
+  {
+    url: "http://unstable.docker.cvt.dk:8080",
+    name: "Jenkins",
+    person: "Viktor"
+  },
+  {
+    url: "http://unstable.docker.cvt.dk:8083",
+    name: "InfluxDB query interface",
+    person: "Viktor"
+  },
+  {
+    url: "http://unstable.docker.cvt.dk:5002",
+    name: "Docker Registry frontend",
+    person: "Viktor"
+  },
+  {
+    url: "http://unstable.docker.cvt.dk:5000",
+    name: "Docker Registry (no browser)",
+    person: "Viktor"
+  },
+  {
+    url: "http://unstable.docker.cvt.dk:8000",
+    name: "This index page",
+    person: "Viktor"
+  }
   ];
 })
